@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery, Script } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 
 
 export const useSiteMetadata = () => {

@@ -22,7 +22,7 @@ function Navigacija() {
             </Nav>
             <Nav className='nav-box'>
               <Link to="/" className='nav-item'>Pocetna</Link>
-              <Link to="/" className='nav-item'>Informacije</Link>
+              <Link to="/druga-strana" className='nav-item'>Druga strana</Link>
 
             </Nav>
           </Navbar.Collapse>

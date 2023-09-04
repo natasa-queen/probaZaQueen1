@@ -23,6 +23,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-static-cms`,
 
 
     {
@@ -59,5 +60,16 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `md`,
+        // Path to the directory
+        path: `${__dirname}/content`,
+      },
+    },
+
+
   ],
 }
