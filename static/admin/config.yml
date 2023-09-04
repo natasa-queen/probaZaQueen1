@@ -20,8 +20,11 @@ collections:
 
   - name: 'usluge'
     label: 'Usluge'
+    preview: false
     folder: 'content/usluge'
+    create: true
     widget: list
     fields:
       - { label: 'Rad', name: 'rad', widget: 'string' }
       - { label: 'Cena', name: 'cena', widget: 'object', required: false }
+
