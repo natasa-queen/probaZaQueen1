@@ -18,12 +18,12 @@ collections:
       - {label: 'Tekst', name: 'body', widget: 'text'}
 
 
-  - name: testimonials
-    label: Testimonials
+  - name: 'testimonials'
+    label: 'Testimonials'
+    folder: 'content/usluge'
     widget: list
     preview: false
     create: true
-    summary: '{{fields.quote}} - {{fields.author.name}}'
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
       - {label: 'author', name: 'Quote', widget: 'string', fields: -{label: 'Name', name: 'name', widget: 'string'} -{label: 'Surname', name: 'surname', widget: 'string'} }
