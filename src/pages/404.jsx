@@ -2,10 +2,10 @@ import * as React from "react"
 import { Seo } from '../components/Seo'
 import Layout from '../components/Layout'
 
-export default function Home() {
+export default function Error() {
   return(
       <Layout>
-        <h1>Zdravo svete!</h1>
+        <h1>Error Page</h1>
       </Layout>
   )
 }
@@ -13,7 +13,7 @@ export default function Home() {
 export const Head = () => {
   return(
       <>
-        <Seo title="Pocetna" />
+        <Seo title="Error" />
       </>
   )
 }
