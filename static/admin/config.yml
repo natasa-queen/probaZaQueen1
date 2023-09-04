@@ -21,20 +21,12 @@ collections:
   - name: testimonials
     label: Testimonials
     widget: list
+    preview: false
+    create: true
     summary: '{{fields.quote}} - {{fields.author.name}}'
     fields:
-      - name: quote
-        label: Quote
-        widget: string
-        default: Everything is awesome!
-      - name: author
-        label: Author
-        widget: object
-        fields:
-          - name: name
-            label: Name
-            widget: string
-            default: Emmet
-          - name: avatar
-            label: Avatar
-            widget: image
+      - {label: 'quote', name: 'Quote', widget: 'string'}
+      - {label: 'author', name: 'Quote', widget: 'string', fields: -{label: 'Name', name: 'name', widget: 'string'} -{label: 'Surname', name: 'surname', widget: 'string'} }
+
+
+
