@@ -16,3 +16,22 @@ collections:
       - {label: 'Naslov', name: 'title', widget: 'string'}
       - {label: 'Objavljeno', name: 'objavljeno', widget: 'string', required: false}
       - {label: 'Tekst', name: 'body', widget: 'text'}
+
+
+name: usluge
+label: Usluge
+widget: list
+fields:
+  - name: rad
+    label: Rad
+    widget: string
+  - name: cena
+    label: Cena
+    widget: object
+    fields:
+      - name: usluga
+        label: Usluga
+        widget: string
+      - name: cena
+        label: Cena
+        widget: number
