@@ -34,7 +34,7 @@ collections:
     preview: false
     create: true
     fields:
-      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Nesto', name: 'nesto', widget: 'string' }
 
 
 
