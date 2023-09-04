@@ -27,7 +27,11 @@ collections:
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
 
-
+  - label: "Gallery"
+    name: "galleryImages"
+    widget: "list"
+    field:
+      - { label: Image, name: image, widget: image }
 
 
 
