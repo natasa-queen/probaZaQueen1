@@ -27,5 +27,36 @@ collections:
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
 
+  - name: 'profile'
+    label: 'Profile'
+    widget: 'object'
+    fields:
+      - name: public
+        label: Public
+        widget: boolean
+        default: true
+      - name: name
+        label: Name
+        widget: string
+      - name: 'birthdate'
+        label: 'Birthdate'
+        widget: 'date'
+        default: ''
+        format: 'MM/DD/YYYY'
+      - name: 'address'
+        label: 'Address'
+        widget: 'object'
+        collapsed: true
+        fields:
+          - name: street
+            label: Street Address
+            widget: string
+          - name: city
+            label: City
+            widget: string
+          - name: post-code
+            label: Postal Code
+            widget: string
+
 
 
