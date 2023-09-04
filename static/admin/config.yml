@@ -37,11 +37,11 @@ collections:
       - { label: 'Nesto', name: 'title', widget: 'string' }
       - label: 'Author'
         name: 'author'
-        widget: 'object'
+        widget: 'list'
         create: true
         fields:
           - { label: 'Name', name: 'name', widget: 'string'}
-          - { label: 'Avatar', name: 'avatar', widget: 'string',}
+          - { label: 'Avatar', name: 'avatar', widget: 'string'}
 
 
 
