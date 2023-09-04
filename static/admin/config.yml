@@ -26,7 +26,6 @@ collections:
     create: true
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
-      - {label: 'author', name: 'Quote', widget: 'string', fields: -{label: 'Name', name: 'name', widget: 'string'} -{label: 'Surname', name: 'surname', widget: 'string'} }
 
 
 
