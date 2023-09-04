@@ -18,13 +18,23 @@ collections:
       - {label: 'Tekst', name: 'body', widget: 'text'}
 
 
-  - name: 'usluge'
-    label: 'Usluge'
-    preview: false
-    folder: 'content/usluge'
-    create: true
+  - name: testimonials
+    label: Testimonials
     widget: list
+    summary: '{{fields.quote}} - {{fields.author.name}}'
     fields:
-      - { label: 'Rad', name: 'rad', widget: 'string' }
-      - { label: 'Cena', name: 'cena', widget: 'object', required: false }
-
+      - name: quote
+        label: Quote
+        widget: string
+        default: Everything is awesome!
+      - name: author
+        label: Author
+        widget: object
+        fields:
+          - name: name
+            label: Name
+            widget: string
+            default: Emmet
+          - name: avatar
+            label: Avatar
+            widget: image
