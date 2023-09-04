@@ -27,36 +27,17 @@ collections:
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
 
-  - name: 'profile'
-    label: 'Profile'
-    widget: 'object'
+  - name: "testimonials"
+    label: "Testimonials"
+    widget: "list"
     fields:
-      - name: public
-        label: Public
-        widget: boolean
-        default: true
-      - name: name
-        label: Name
-        widget: string
-      - name: 'birthdate'
-        label: 'Birthdate'
-        widget: 'date'
-        default: ''
-        format: 'MM/DD/YYYY'
-      - name: 'address'
-        label: 'Address'
-        widget: 'object'
-        collapsed: true
+      - { label: Quote, name: quote, widget: string, default: "Everything is awesome!" }
+      - label: Author
+        name: author
+        widget: object
         fields:
-          - name: street
-            label: Street Address
-            widget: string
-          - name: city
-            label: City
-            widget: string
-          - name: post-code
-            label: Postal Code
-            widget: string
+          - { label: Name, name: name, widget: string, default: "Emmet" }
+          - { label: Prezime, name: prezime, widget: string }
 
 
 
