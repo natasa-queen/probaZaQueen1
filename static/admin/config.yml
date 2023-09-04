@@ -27,19 +27,7 @@ collections:
     fields:
       - {label: 'quote', name: 'Quote', widget: 'string'}
 
-  - name: "nest"
-    label: "Nesto"
-    widget: "list"
-    preview: false
-    create: true
-    fields:
-      - { label: 'Quote', name: 'quote', widget: 'string', default: "Everything is awesome!" }
-      - label: "Author"
-        name: "author"
-        widget: 'object'
-        fields:
-          - { label: 'Name', name: 'name', widget: 'string', default: "Emmet" }
-          - { label: 'Prezime', name: 'prezime', widget: 'string' }
+
 
 
 
