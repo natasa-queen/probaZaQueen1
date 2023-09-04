@@ -6,16 +6,16 @@ media_folder: static/images
 public_folder: ../../static/images/
 
 collections:
-  - name: 'cenovnik'
-    preview: false
-    label: 'Cenovnik'
-    folder: 'content/cenovnik'
-    create: true
-    slug: '{{slug}}'
-    fields:
-      - {label: 'Naslov', name: 'title', widget: 'string'}
-      - {label: 'Objavljeno', name: 'objavljeno', widget: 'string', required: false}
-      - {label: 'Tekst', name: 'body', widget: 'text'}
+#  - name: 'cena'
+#    preview: false
+#    label: 'Cena'
+#    folder: 'content/cenovnik'
+#    create: true
+#    slug: '{{slug}}'
+#    fields:
+#      - {label: 'Naslov', name: 'title', widget: 'string'}
+#      - {label: 'Objavljeno', name: 'objavljeno', widget: 'string', required: false}
+#      - {label: 'Tekst', name: 'body', widget: 'text'}
 
 
   - name: 'testimonials'
@@ -60,4 +60,19 @@ collections:
           - { label: 'Cena usluge', name: 'cenaUsluge', widget: 'string' }
 
 
+  - label: "Cena Test"
+    name: "cenaTest"
+    widget: "string"
+    folder: 'content/cenovnik'
+    preview: false
+    create: true
+    fields:
+      - { label: 'Usluga test', name: 'title', widget: 'string' }
+      - label: 'Vrsta test'
+        name: 'vrsta2'
+        widget: 'string'
+        create: true
+        fields:
+          - { label: 'Vrsta usluge', name: 'vrstaUsluge2', widget: 'string' }
+          - { label: 'Cena usluge', name: 'cenaUsluge2', widget: 'string' }
 
