@@ -30,8 +30,11 @@ collections:
   - label: "Gallery"
     name: "galleryImages"
     widget: "list"
-    field:
-      - { label: Image, name: image, widget: image }
+    folder: 'content/usluge'
+    preview: false
+    create: true
+    fields:
+      - { label: 'Image', name: 'image', widget: 'image' }
 
 
 
