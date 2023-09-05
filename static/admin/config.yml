@@ -76,8 +76,8 @@ collections:
     name: 'efekti'
     folder: 'content/efekti'
     preview: false
-    create: true
+    create: false
     fields:
 #      - { label: 'Tekst objave', name: 'title', widget: 'text' }
       - { label: 'Pahulja', name: 'title', widget: 'boolean' }
-      - { label: 'Nova godina', name: 'title', widget: 'boolean' }
+#      - { label: 'Nova godina', name: 'Ng', widget: 'boolean' }
