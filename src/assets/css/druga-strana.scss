@@ -1,0 +1,33 @@
+
+.druga-kontejner {
+
+  h1 {
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    color: blue;
+  }
+
+  .druga-lista {
+    max-width: 500px;
+    margin: 1rem auto;
+    font-size: 2rem;
+
+
+        .usluge {
+          display: flex;
+          justify-content: space-between;
+
+          p{
+            font-size: 1rem;
+          }
+        }
+
+
+
+  }
+
+
+
+}

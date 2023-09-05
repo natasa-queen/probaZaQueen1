@@ -68,8 +68,9 @@ collections:
     preview: false
     create: true
     fields:
-      - { label: 'Tekst objave', name: 'title', widget: 'text' }
+      - { label: 'Obavestenje', name: 'title', widget: 'string' }
       - { label: 'Objavi', name: 'objavi', widget: 'boolean' }
+      - { label: 'Tekst', name: 'body', widget: 'text' }
 
 
   - label: "Efekti"
