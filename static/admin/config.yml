@@ -79,4 +79,5 @@ collections:
     create: true
     fields:
 #      - { label: 'Tekst objave', name: 'title', widget: 'text' }
-      - { label: 'Efekt', name: 'efekt', widget: 'boolean' }
+      - { label: 'Pahulja', name: 'title', widget: 'boolean' }
+      - { label: 'Nova godina', name: 'title', widget: 'boolean' }
