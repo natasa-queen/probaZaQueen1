@@ -70,3 +70,13 @@ collections:
     fields:
       - { label: 'Tekst objave', name: 'title', widget: 'text' }
       - { label: 'Objavi', name: 'objavi', widget: 'boolean' }
+
+
+  - label: "Efekti"
+    name: 'efekti'
+    folder: 'content/efekti'
+    preview: false
+    create: true
+    fields:
+#      - { label: 'Tekst objave', name: 'title', widget: 'text' }
+      - { label: 'Efekt', name: 'efekt', widget: 'boolean' }
