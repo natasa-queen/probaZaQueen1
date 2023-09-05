@@ -43,6 +43,8 @@ collections:
           - { label: 'Name', name: 'name', widget: 'string'}
           - { label: 'Avatar', name: 'avatar', widget: 'string'}
 
+
+
   - label: "Cenovnik"
     name: "cena"
     widget: "list"
@@ -60,19 +62,11 @@ collections:
           - { label: 'Cena usluge', name: 'cenaUsluge', widget: 'string' }
 
 
-  - label: "Cena Test"
-    name: "cenaTest"
-    widget: "string"
-    folder: 'content/cenovnik'
+  - label: "Objava"
+    name: 'objava'
+    folder: 'content/objava'
     preview: false
     create: true
     fields:
-      - { label: 'Usluga test', name: 'title', widget: 'string' }
-      - label: 'Vrsta test'
-        name: 'vrsta2'
-        widget: 'string'
-        create: true
-        fields:
-          - { label: 'Vrsta usluge', name: 'vrstaUsluge2', widget: 'string' }
-          - { label: 'Cena usluge', name: 'cenaUsluge2', widget: 'string' }
-
+      - { label: 'Tekst objave', name: 'title', widget: 'text' }
+      - { label: 'Objavi', name: 'objavi', widget: 'boolean' }
