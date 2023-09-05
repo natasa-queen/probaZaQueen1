@@ -76,7 +76,7 @@ collections:
     name: 'efekti'
     folder: 'content/efekti'
     preview: false
-    create: true
+    create: false
     fields:
 #      - { label: 'Tekst objave', name: 'title', widget: 'text' }
       - { label: 'Efekt', name: 'title', widget: 'string' }
