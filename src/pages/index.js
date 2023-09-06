@@ -2,6 +2,7 @@ import * as React from "react"
 import { Script } from 'gatsby'
 import { Seo } from '../components/Seo'
 import Layout from '../components/Layout'
+import '../assets/css/main.scss'
 
 export default function Home() {
   return(

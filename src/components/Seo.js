@@ -37,6 +37,9 @@ export const Seo = ({ title, description, children }) => {
             <meta name="keywords" content="duhovnost, poezija, crkva, biblija, pjesme, stihovi" />
             {/*<meta name="viewport" content="width=device-width, initial-scale=1.0" />*/}
 
+            {/*<meta name="theme-color" content="#123456">*/}
+            {/*<meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">*/}
+
             {/*<meta name="image" content={seo.image} />*/}
             {/*<meta name="twitter:card" content="summary_large_image" />*/}
             {/*<meta name="twitter:title" content={seo.title} />*/}
