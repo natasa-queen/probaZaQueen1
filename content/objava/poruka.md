@@ -1,5 +1,5 @@
 ---
-title: Novo!
-draft: false
+title: Snizenje!
+draft: true
 ---
-Novo Obavestenje!
+O B A V E S T E NJ E!!! Puder obrve! Akcija!
