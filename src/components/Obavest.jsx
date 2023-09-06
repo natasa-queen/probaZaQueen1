@@ -37,10 +37,6 @@ const Obavest = () => {
 
 
 
-
-
-
-
             {obavest.map(({node}) => {
                 return(
                     <h5 key={node.id}>
