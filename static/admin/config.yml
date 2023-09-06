@@ -69,7 +69,7 @@ collections:
     create: true
     fields:
       - { label: 'Obavestenje', name: 'title', widget: 'string' }
-      - { label: 'Objavi', name: 'objavi', widget: 'boolean' }
+      - { label: 'Objavi', name: 'draft', widget: 'boolean' }
       - { label: 'Tekst', name: 'body', widget: 'text' }
 
 
@@ -81,4 +81,4 @@ collections:
     fields:
 #      - { label: 'Tekst objave', name: 'title', widget: 'text' }
       - { label: 'Efekt', name: 'title', widget: 'string' }
-      - { label: 'Ukljuci', name: 'ukljuceno', widget: 'boolean' }
+      - { label: 'Ukljuci', name: 'ukljuci', widget: 'boolean' }
