@@ -1,6 +1,6 @@
 ---
 title: Ovo je novo obavestenje!!!!
 objavi: false
-draft: true
+draft: false
 ---
 Snizenje! Novooo!!!
