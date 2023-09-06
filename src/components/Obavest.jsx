@@ -17,7 +17,7 @@ const Obavest = () => {
                 childMarkdownRemark {
                   frontmatter {
                     title
-                    objavi
+                    
                   }
                   id
                 }
