@@ -17,8 +17,10 @@ const Obavest = () => {
                 childMarkdownRemark {
                   frontmatter {
                     title
-                    
+                    objavi
                   }
+                  html
+                  rawMarkdownBody
                   id
                 }
               }
@@ -39,11 +41,30 @@ const Obavest = () => {
 
             {obavest.map(({node}) => {
                 return(
-                    <h5 key={node.id}>
-                        {node.childMarkdownRemark.frontmatter.title}
-                    </h5>
+                    <div>
+                        <h5 key={node.id}>
+                            {node.childMarkdownRemark.frontmatter.title}
+                        </h5>
+
+                        {node.childMarkdownRemark.frontmatter.objavi ? (
+                            <p>This is a draft.</p>
+                        ) : (
+                            <p>F A L S E</p>
+                        )}
+
+                    </div>
                 )
             })}
+
+
+            {/*{obavest.map(({node}) => {*/}
+            {/*    return(*/}
+            {/*        <p>*/}
+            {/*            {node.childMarkdownRemark.rawMarkdownBody}*/}
+            {/*        </p>*/}
+            {/*    )*/}
+            {/*})}*/}
+
 
         </div>
 
