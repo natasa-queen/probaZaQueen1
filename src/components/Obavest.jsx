@@ -17,7 +17,7 @@ const Obavest = () => {
                 childMarkdownRemark {
                   frontmatter {
                     title
-                    objavi
+                    
                   }
                   html
                   rawMarkdownBody
@@ -46,11 +46,11 @@ const Obavest = () => {
                             {node.childMarkdownRemark.frontmatter.title}
                         </h5>
 
-                        {node.childMarkdownRemark.frontmatter.objavi ? (
-                            <p>This is a draft.</p>
-                        ) : (
-                            <p>F A L S E</p>
-                        )}
+                        {/*{node.childMarkdownRemark.frontmatter.objavi ? (*/}
+                        {/*    <p>This is a draft.</p>*/}
+                        {/*) : (*/}
+                        {/*    <p>F A L S E</p>*/}
+                        {/*)}*/}
 
                     </div>
                 )

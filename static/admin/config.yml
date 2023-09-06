@@ -83,7 +83,7 @@ collections:
         name: title
         widget: string
       - label: Objavi
-        name: objavi
+        name: draft
         widget: boolean
         default: false
       - name: body
