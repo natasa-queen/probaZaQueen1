@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import '../assets/css/obavest.scss'
 
@@ -17,7 +17,7 @@ const Obavest = () => {
                 childMarkdownRemark {
                   frontmatter {
                     title
-                    
+                    draft
                   }
                   html
                   rawMarkdownBody
@@ -32,42 +32,18 @@ const Obavest = () => {
     const obavest = data.allFile.edges
 
 
-
     return(
-
-        <div className="obavest ">
-
-
-
+        <>
             {obavest.map(({node}) => {
                 return(
-                    <div>
-                        <h5 key={node.id}>
-                            {node.childMarkdownRemark.frontmatter.title}
-                        </h5>
-
-                        {/*{node.childMarkdownRemark.frontmatter.objavi ? (*/}
-                        {/*    <p>This is a draft.</p>*/}
-                        {/*) : (*/}
-                        {/*    <p>F A L S E</p>*/}
-                        {/*)}*/}
-
+                    <div className={node.childMarkdownRemark.frontmatter.draft ? `obavest` : `sakrij`}>
+                        <p key={node.id}>
+                            {node.childMarkdownRemark.rawMarkdownBody}
+                        </p>
                     </div>
                 )
             })}
-
-
-            {/*{obavest.map(({node}) => {*/}
-            {/*    return(*/}
-            {/*        <p>*/}
-            {/*            {node.childMarkdownRemark.rawMarkdownBody}*/}
-            {/*        </p>*/}
-            {/*    )*/}
-            {/*})}*/}
-
-
-        </div>
-
+        </>
     )
 }
 
