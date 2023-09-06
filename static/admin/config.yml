@@ -79,13 +79,15 @@ collections:
     preview: false
     create: true
     fields:
-      - name: title
-        label: Obavestenje
+      - label: Obavestenje
+        name: title
         widget: string
-      - name: draft
-        label: Objavi
-        widget: boolean
-        default: false
+
+      - {label: "Objavi", name: "draft", widget: "boolean", default: false}
+#      - label: Objavi
+#        name: draft
+#        widget: boolean
+#        default: false
       - name: body
         label: Tekst
         widget: text
