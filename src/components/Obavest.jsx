@@ -7,27 +7,27 @@ import '../assets/css/obavest.scss'
 
 const Obavest = () => {
 
-  //   const data = useStaticQuery(graphql`
-  //       query {
-  //         allFile(filter: {relativeDirectory: {eq: "objava"}}) {
-  //           totalCount
-  //           edges {
-  //             node {
-  //               id
-  //               childMarkdownRemark {
-  //                 frontmatter {
-  //                   title
-  //                   objavi
-  //                 }
-  //                 id
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  // `)
-  //
-  //   const obavest = data.allFile.edges
+    const data = useStaticQuery(graphql`
+        query {
+          allFile(filter: {relativeDirectory: {eq: "objava"}}) {
+            totalCount
+            edges {
+              node {
+                id
+                childMarkdownRemark {
+                  frontmatter {
+                    title
+                    objavi
+                  }
+                  id
+                }
+              }
+            }
+          }
+        }
+  `)
+
+    const obavest = data.allFile.edges
 
 
 
@@ -41,13 +41,13 @@ const Obavest = () => {
 
 
 
-            {/*{obavest.map(({node}) => {*/}
-            {/*    return(*/}
-            {/*        <h5 key={node.id}>*/}
-            {/*            {node.childMarkdownRemark.frontmatter.title}*/}
-            {/*        </h5>*/}
-            {/*    )*/}
-            {/*})}*/}
+            {obavest.map(({node}) => {
+                return(
+                    <h5 key={node.id}>
+                        {node.childMarkdownRemark.frontmatter.title}
+                    </h5>
+                )
+            })}
 
         </div>
 
