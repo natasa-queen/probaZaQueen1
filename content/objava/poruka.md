@@ -1,5 +1,5 @@
 ---
 title: Novo!
-draft: false
+draft: true
 ---
 Novo Obavestenje!
