@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import '../assets/css/obavest.scss'
 
-
+import Marquee from "react-fast-marquee";
 
 
 const Obavest = () => {
@@ -36,11 +36,15 @@ const Obavest = () => {
         <>
             {obavest.map(({node}) => {
                 return(
-                    <div className={node.childMarkdownRemark.frontmatter.draft ? `obavest` : `sakrij`}>
-                        <p key={node.id}>
-                            {node.childMarkdownRemark.rawMarkdownBody}
-                        </p>
-                    </div>
+
+                      <div className={node.childMarkdownRemark.frontmatter.draft ? `obavest` : `sakrij`}>
+                        <Marquee speed={60} autoFill={true}>
+                          <p key={node.id}>
+                              {node.childMarkdownRemark.rawMarkdownBody}
+                          </p>
+                        </Marquee>
+                      </div>
+
                 )
             })}
         </>
