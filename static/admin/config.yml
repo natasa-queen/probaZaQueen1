@@ -102,4 +102,4 @@ collections:
     fields:
 #      - { label: 'Tekst objave', name: 'title', widget: 'text' }
       - { label: 'Efekt', name: 'title', widget: 'string' }
-      - { label: 'Ukljuci', name: 'ukljuci', widget: 'boolean' }
+      - { label: 'Ukljuci', name: 'draft', widget: 'boolean' }
