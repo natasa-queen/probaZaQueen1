@@ -34,7 +34,7 @@ const PahuljaTest = () => {
     const snowflakes  = new Snowflakes({
       color: '#000', // Default: "#5ECDEF"
       // container: document.querySelector(''), // Default: document.body
-      count: 3, // 100 snowflakes. Default: 50
+      count: 10, // 100 snowflakes. Default: 50
       minOpacity: 0.6, // From 0 to 1. Default: 0.6
       maxOpacity: 0.95, // From 0 to 1. Default: 1
       minSize: 7, // Default: 10
