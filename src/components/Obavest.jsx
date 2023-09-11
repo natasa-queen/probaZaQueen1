@@ -38,11 +38,13 @@ const Obavest = () => {
                 return(
 
                       <div className={node.childMarkdownRemark.frontmatter.draft ? `obavest` : `sakrij`}>
+
                         <Marquee speed={60} autoFill={true}>
                           <p key={node.id}>
                               {node.childMarkdownRemark.rawMarkdownBody}
                           </p>
                         </Marquee>
+
                       </div>
 
                 )

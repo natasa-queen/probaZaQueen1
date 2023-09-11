@@ -28,7 +28,9 @@
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-fast-marquee": "^1.6.0",
-    "sass": "^1.66.1"
+    "react-snowfall": "^1.2.1",
+    "sass": "^1.66.1",
+    "snow-fall-effect": "^1.3.8"
   },
   "repository": {
     "type": "git",
@@ -36,5 +38,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "magic-snowflakes": "^6.1.0"
   }
 }

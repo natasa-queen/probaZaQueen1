@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function Navigacija() {
   return (
-      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navigacija">
         <Container>
           <Navbar.Brand href="/">
             GatsbyJs Test

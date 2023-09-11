@@ -3,7 +3,8 @@ import { Seo } from '../components/Seo'
 import Layout from '../components/Layout'
 import '../assets/css/treca-strana.scss'
 
-import Obavest from '../components/Obavest'
+import Pahulje from '../components/Pahulje'
+
 
 
 
@@ -17,11 +18,12 @@ export default function TrecaStrana() {
 
             <div className='treca-kontejner'>
 
+              {/*<Pahulje />*/}
+
                 <h1>Treca strana!</h1>
 
                 <div className="treca-strana">
 
-                    {/*<Obavest />*/}
 
                     <div className="tekst">
                         <h2>Ovo je kao ostatak teksta.</h2>
