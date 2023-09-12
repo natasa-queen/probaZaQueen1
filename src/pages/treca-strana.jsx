@@ -13,7 +13,7 @@ import Accordion2 from "../components/AccordionTest2";
 
 import NovaGodina from "../components/NovaGodina";
 
-import Zoom from 'react-reveal/Zoom';
+
 
 
 
@@ -27,9 +27,9 @@ export default function TrecaStrana() {
             <div className='treca-kontejner'>
 
               <NovaGodina />
-                <Zoom>
-                    <h1>Treca strana!</h1>
-                </Zoom>
+
+                <h1>Treca strana!</h1>
+
 
                 <div className="treca-strana">
 
