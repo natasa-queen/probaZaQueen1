@@ -7,11 +7,15 @@ import '../assets/css/druga-strana.scss'
 
 import Accordion from 'react-bootstrap/Accordion';
 
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+
 
 
 export default function DrugaStrana({ data }) {
     const total = data.allFile.totalCount
     const lista = data.allFile.edges
+
+
 
     return (
         <Layout>
@@ -27,10 +31,12 @@ export default function DrugaStrana({ data }) {
 
                         const title = node.childMarkdownRemark.frontmatter.title
 
-                        return (
+                        const uniqueId = `accordion-${node.id}`;
 
-                            <Accordion key={node.id} >
-                                <Accordion.Item eventKey="0">
+                        return (
+                        <>
+                            <Accordion   >
+                                <Accordion.Item eventKey={uniqueId}>
                                     <Accordion.Header>{title}</Accordion.Header>
 
                                     {node.childMarkdownRemark.frontmatter.vrsta.map((vrsta) => {
@@ -45,7 +51,7 @@ export default function DrugaStrana({ data }) {
                                     })}
                                 </Accordion.Item>
                             </Accordion>
-
+                          </>
                         )
 
                     })}

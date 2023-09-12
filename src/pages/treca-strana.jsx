@@ -5,7 +5,15 @@ import '../assets/css/treca-strana.scss'
 
 import Pahulje from '../components/Pahulje'
 
+import Accordion from '../components/Accordion'
+import AccordionTest from '../components/AccordionTest'
 
+import Accordion2 from "../components/AccordionTest2";
+
+
+import NovaGodina from "../components/NovaGodina";
+
+import Zoom from 'react-reveal/Zoom';
 
 
 
@@ -18,9 +26,10 @@ export default function TrecaStrana() {
 
             <div className='treca-kontejner'>
 
-              {/*<Pahulje />*/}
-
-                <h1>Treca strana!</h1>
+              <NovaGodina />
+                <Zoom>
+                    <h1>Treca strana!</h1>
+                </Zoom>
 
                 <div className="treca-strana">
 
@@ -28,6 +37,15 @@ export default function TrecaStrana() {
                     <div className="tekst">
                         <h2>Ovo je kao ostatak teksta.</h2>
                     </div>
+
+                  <div className="akordion">
+                    {/*<Accordion />*/}
+
+                    {/*<AccordionTest />*/}
+
+                    <Accordion2 />
+
+                  </div>
 
 
 

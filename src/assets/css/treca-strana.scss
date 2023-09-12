@@ -1,3 +1,6 @@
+//@import '~mdb-ui-kit/css/mdb.min.css';
+
+
 
 .treca-kontejner {
 
@@ -32,6 +35,16 @@
 
       h2 {
         text-align: center;
+      }
+    }
+
+    .akordion {
+      margin: 1rem auto;
+      max-width: 540px;
+
+      h2 {
+        text-align: center;
+        color: dodgerblue;
       }
     }
 

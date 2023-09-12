@@ -29,31 +29,29 @@ const PahuljaTest = () => {
 
 
 
-
   useEffect(() => {
-    const snowflakes  = new Snowflakes({
-      color: '#000', // Default: "#5ECDEF"
-      // container: document.querySelector(''), // Default: document.body
-      count: 10, // 100 snowflakes. Default: 50
-      minOpacity: 0.6, // From 0 to 1. Default: 0.6
-      maxOpacity: 0.95, // From 0 to 1. Default: 1
-      minSize: 7, // Default: 10
-      maxSize: 19, // Default: 25
-      rotation: true, // Default: true
-      speed: 0.5, // The property affects the speed of falling. Default: 1
-      wind: true, // Without wind. Default: true
-      // width: 500, // Default: width of container
-      // height: 250, // Default: height of container
-      zIndex: 100, // Default: 9999,
-      autoResize: true // Default: true
-    });
+    if (pahulje) {
+      const snowflakes  = new Snowflakes({
+        color: '#000', // Default: "#5ECDEF"
+        // container: document.querySelector(''), // Default: document.body
+        count: 10, // 100 snowflakes. Default: 50
+        minOpacity: 0.6, // From 0 to 1. Default: 0.6
+        maxOpacity: 0.95, // From 0 to 1. Default: 1
+        minSize: 7, // Default: 10
+        maxSize: 19, // Default: 25
+        rotation: true, // Default: true
+        speed: 0.5, // The property affects the speed of falling. Default: 1
+        wind: true, // Without wind. Default: true
+        // width: 500, // Default: width of container
+        // height: 250, // Default: height of container
+        zIndex: 100, // Default: 9999,
+        autoResize: true // Default: true
+      });
 
+      // pahulje ? snowflakes.start() : snowflakes.destroy()
 
-    pahulje ? snowflakes.start() : snowflakes.destroy()
-
-
-
-    // snowflakes.start();
+      snowflakes.start();
+    }
 
     return () => {
       // snowflakes.stop();
@@ -63,6 +61,42 @@ const PahuljaTest = () => {
 
 
   }, []);
+
+
+
+  // useEffect(() => {
+  //   const snowflakes  = new Snowflakes({
+  //     color: '#000', // Default: "#5ECDEF"
+  //     // container: document.querySelector(''), // Default: document.body
+  //     count: 10, // 100 snowflakes. Default: 50
+  //     minOpacity: 0.6, // From 0 to 1. Default: 0.6
+  //     maxOpacity: 0.95, // From 0 to 1. Default: 1
+  //     minSize: 7, // Default: 10
+  //     maxSize: 19, // Default: 25
+  //     rotation: true, // Default: true
+  //     speed: 0.5, // The property affects the speed of falling. Default: 1
+  //     wind: true, // Without wind. Default: true
+  //     // width: 500, // Default: width of container
+  //     // height: 250, // Default: height of container
+  //     zIndex: 100, // Default: 9999,
+  //     autoResize: true // Default: true
+  //   });
+  //
+  //
+  //   // pahulje ? snowflakes.start() : snowflakes.destroy()
+  //
+  //
+  //
+  //   snowflakes.start();
+  //
+  //   return () => {
+  //     // snowflakes.stop();
+  //     // snowflakes.destroy();
+  //   };
+  //
+  //
+  //
+  // }, []);
 
 
 
