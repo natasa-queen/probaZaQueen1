@@ -11,7 +11,7 @@ import AccordionTest from '../components/AccordionTest'
 import Accordion2 from "../components/AccordionTest2";
 
 
-// import NovaGodina from "../components/NovaGodina";
+
 
 
 
@@ -26,7 +26,7 @@ export default function TrecaStrana() {
 
             <div className='treca-kontejner'>
 
-              {/*<NovaGodina />*/}
+
 
                 <h1>Treca strana!</h1>
 
@@ -39,9 +39,7 @@ export default function TrecaStrana() {
                     </div>
 
                   <div className="akordion">
-                    {/*<Accordion />*/}
 
-                    {/*<AccordionTest />*/}
 
                     <Accordion2 />
 
