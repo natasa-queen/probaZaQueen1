@@ -3,12 +3,12 @@ import { Seo } from '../components/Seo'
 import Layout from '../components/Layout'
 import '../assets/css/treca-strana.scss'
 
-import Pahulje from '../components/Pahulje'
+// import Pahulje from '../components/Pahulje'
 
-import Accordion from '../components/Accordion'
-import AccordionTest from '../components/AccordionTest'
+// import Accordion from '../components/Accordion'
+// import AccordionTest from '../components/AccordionTest'
 
-import Accordion2 from "../components/AccordionTest2";
+// import Accordion2 from "../components/AccordionTest2";
 
 
 
@@ -41,7 +41,7 @@ export default function TrecaStrana() {
                   <div className="akordion">
 
 
-                    <Accordion2 />
+                    {/*<Accordion2 />*/}
 
                   </div>
 
